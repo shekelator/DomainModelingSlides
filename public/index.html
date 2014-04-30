@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<title>The Process of Domain Modeling</title>
+		<meta name="description">What we are doing and why</meta>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="reveal.js/css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<style>
+			.reveal section img.transparent-image {
+				border: none;
+				background: none;
+				box-shadow: none;
+			}
+			.reveal section img.big-image {
+				height: 75%;
+			}
+			.reveal section span.domain {
+				display: block;
+				background-color: brown;
+			}
+		</style>
+	</head>
+	<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2>What we are doing here</h1>
+				<p>
+					<small>A very brief explanation</small>
+				</p>
+			</section>
+
+			<section>
+				<h2>A Domain Model</h2>
+				<ul>
+					<li class="fragment">The concepts that make up our "problem domain"</li>
+					<li class="fragment">...plus their relationships and constraints</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>In other words...</h2>
+				<p>What is the <i>mental model</i> that we use to understand what we do every day?</p>
+				<p class="fragment">What are the key players in that model, and how do they relate?</p>
+				<p class="fragment"><small>And do we agree on it?</small></p>
+				<ul>
+					<li class="fragment">Product</li>
+					<li class="fragment">Report</li>
+					<li class="fragment">Report Type</li>
+					<li class="fragment">Client</li>
+					<li class="fragment">Blueprint</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>The Domain Model is central to the relationship between the software and the organization that uses it</h3>
+				<img src="images/model-relationships.png" class="transparent-image"/>
+			</section>
+
+			<section>
+				<h2>The Model is not just a <strong>Thing</strong></h2>
+				<p class="fragment">It is a continual process.</p>
+			</section>
+
+		<section>
+			<p>To be continued...</p>
+		</section>
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="reveal.js/lib/js/head.min.js"></script>
+	<script type="text/javascript" src="reveal.js/js/reveal.min.js"></script>
+	<script type="text/javascript">
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+			theme: Reveal.getQueryHash().theme,
+			transition: Reveal.getQueryHash().transition || 'default',
+
+			dependencies: [
+				{ src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); }},
+				{ src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; }},
+				{ src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; }}
+			]
+		});
+	</script>
+	
+</body>
+
+</html>

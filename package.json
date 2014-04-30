@@ -1,0 +1,9 @@
+{
+	"name": "DomainModelingSlides",
+	"description": "Reminder of what DDD is",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"express": "3.4.4"
+	}
+}
